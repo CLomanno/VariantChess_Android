@@ -1,0 +1,174 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="?android:attr/buttonBarStyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="bottom"
+    android:orientation="vertical"
+    android:background="@color/page_bg"
+    tools:context="com.example.myfirstapp.RatedGamePage" >
+
+    <LinearLayout
+        android:id="@+id/rated_games_login"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_vertical"
+        android:layout_weight=".5" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/login_name"
+            android:textColor="#588810"
+            android:textSize="20sp" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/unrated_games_row1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="bottom" >
+
+        <Button
+            android:id="@+id/button_rated_standard_chess"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="12dp"
+            android:layout_weight="1"
+            android:onClick="launchStandardChess"
+            android:text="@string/button_rated_standard_chess"
+            style="?android:attr/buttonBarButtonStyle"
+            android:background="@drawable/shapes"
+            android:textColor="@color/button_text"
+            tools:ignore="NestedWeights" />
+
+        <Button
+            android:id="@+id/button_rated_fischer_960"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="25dp"
+            android:layout_weight="1"
+            android:onClick="launchFischer960"
+            style="?android:attr/buttonBarButtonStyle"
+            android:background="@drawable/shapes"
+            android:textColor="@color/button_text"
+            android:text="@string/button_rated_fischer_960" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/unrated_games_row2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <Button
+            android:id="@+id/button_rated_bong_cloud"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="12dp"
+            android:layout_weight="1"
+            android:onClick="launchBongCloud"
+            android:text="@string/button_rated_bong_cloud"
+            style="?android:attr/buttonBarButtonStyle"
+            android:background="@drawable/shapes"
+            android:textColor="@color/button_text"
+            tools:ignore="NestedWeights" />
+        <Button
+            android:id="@+id/button_rated_maharaja"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="25dp"
+            android:layout_weight="1"
+            android:onClick="launchMaharaja"
+            style="?android:attr/buttonBarButtonStyle"
+            android:background="@drawable/shapes"
+            android:textColor="@color/button_text"
+            android:text="@string/button_rated_maharaja" />   
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/unrated_games_row3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <Button
+            android:id="@+id/button_rated_flip_chess"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="12dp"
+            android:layout_weight="1"
+            android:onClick="launchFlipChess"
+            android:text="@string/button_rated_flip_chess"
+            style="?android:attr/buttonBarButtonStyle"
+            android:background="@drawable/shapes"
+            android:textColor="@color/button_text"
+            tools:ignore="NestedWeights" />
+
+        <Button
+            android:id="@+id/button_rated_shatranj"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="25dp"
+            android:layout_weight="1"
+            android:onClick="launchShatranj"
+            style="?android:attr/buttonBarButtonStyle"
+            android:background="@drawable/shapes"
+            android:textColor="@color/button_text"
+            android:text="@string/button_rated_shatranj" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/unrated_games_row4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <Button
+            android:id="@+id/button_rated_game_types"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:onClick="gameTypesPage"
+            style="?android:attr/buttonBarButtonStyle"
+            android:background="@drawable/shapes"
+            android:textColor="@color/button_text"
+            android:text="@string/button_game_types" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/rated_game_adds"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".5" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:gravity="center_horizontal"
+            android:text="@string/adds"
+            android:textColor="#588810"
+            android:textSize="20sp" />
+    </LinearLayout>
+</LinearLayout>

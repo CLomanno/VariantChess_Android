@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/page_bg"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/main_menu_splash"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_vertical"
+        android:layout_weight=".5" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/app_name"
+            android:textColor="#588810"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/main_menu_row1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <Button
+            android:id="@+id/button_unrated_game"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="12dp"
+            android:layout_weight="1"
+            android:onClick="unratedGamePage"
+            android:text="@string/button_unrated"
+            style="?android:attr/buttonBarButtonStyle"
+            android:background="@drawable/shapes"
+            android:textColor="@color/button_text"
+            tools:ignore="NestedWeights" />
+
+        <Button
+            android:id="@+id/button_rated_game"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="25dp"
+            android:layout_weight="1"
+            android:onClick="ratedGamePage"
+            style="?android:attr/buttonBarButtonStyle"
+            android:background="@drawable/shapes"
+            android:textColor="@color/button_text"
+            android:text="@string/button_rated" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/main_menu_row3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <Button
+            android:id="@+id/button_friends"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="12dp"
+            android:layout_weight="1"
+            android:onClick="friendsPage"
+            android:text="@string/button_friends"
+            style="?android:attr/buttonBarButtonStyle"
+            android:background="@drawable/shapes"
+            android:textColor="@color/button_text"
+            tools:ignore="NestedWeights" />
+
+        <Button
+            android:id="@+id/button_account"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="25dp"
+            android:layout_weight="1"
+            android:onClick="accountPage"
+            style="?android:attr/buttonBarButtonStyle"
+            android:background="@drawable/shapes"
+            android:textColor="@color/button_text"
+            android:text="@string/button_account" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/main_menu_row4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <Button
+            android:id="@+id/button_about"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="12dp"
+            android:layout_weight="1"
+            android:onClick="aboutPage"
+            android:text="@string/button_about"
+            style="?android:attr/buttonBarButtonStyle"
+            android:background="@drawable/shapes"
+            android:textColor="@color/button_text"
+            tools:ignore="NestedWeights" />
+
+        <Button
+            android:id="@+id/button_help"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="25dp"
+            android:layout_weight="1"
+            android:onClick="helpPage"
+            style="?android:attr/buttonBarButtonStyle"
+            android:background="@drawable/shapes"
+            android:textColor="@color/button_text"
+            android:text="@string/button_help" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/main_menu_row2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <Button
+            android:id="@+id/button_game_types"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:onClick="gameTypesPage"
+            style="?android:attr/buttonBarButtonStyle"
+            android:background="@drawable/shapes"
+            android:textColor="@color/button_text"
+            android:text="@string/button_game_types" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/main_menu_adds"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".5" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:gravity="center_horizontal"
+            android:text="@string/adds"
+            android:textColor="#588810"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</LinearLayout>

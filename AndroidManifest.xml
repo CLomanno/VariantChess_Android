@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myfirstapp"
+    android:versionCode="1"
+    android:versionName="1.0" android:installLocation="auto">
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="21" />
+
+    <application
+        android:allowBackup="true"
+        android:exported="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+"
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".DisplayMessageActivity"
+            android:label="@string/title_activity_display_message"
+            android:parentActivityName=".FriendsPage" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.myfirstapp.FriendsPage" />
+        </activity>
+        <activity
+            android:name=".UnratedGamePage"
+            android:label="@string/title_activity_unrated_game_page"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.myfirstapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".RatedGamePage"
+            android:label="@string/title_activity_rated_game_page"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.myfirstapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".AccountPage"
+            android:label="@string/title_activity_account_page"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.myfirstapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".FriendsPage"
+            android:label="@string/title_activity_friends_page"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.myfirstapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".GameTypesPage"
+            android:label="@string/title_activity_game_types_page"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.myfirstapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".AboutPage"
+            android:label="@string/title_activity_about_page"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.myfirstapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".HelpPage"
+            android:label="@string/title_activity_help_page"
+            android:parentActivityName=".MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.myfirstapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".UnratedStandardChessBoard"
+            android:label="@string/title_activity_unrated_standard_chess_board"
+            android:parentActivityName=".UnratedGamePage" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.myfirstapp.UnratedGamePage" />
+        </activity>
+        <activity
+            android:name=".RatedStandardChessBoard"
+            android:label="@string/title_activity_rated_standard_chess_board"
+            android:parentActivityName=".RatedGamePage" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.myfirstapp.RatedGamePage" />
+        </activity>
+        <activity
+            android:name=".chess"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:parentActivityName=".UnratedGamePage" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.myfirstapp.UnratedGamePage" />
+        </activity>
+        <activity
+            android:name=".NoticeDialog"
+            android:label="@string/title_activity_notice_dialog" >
+        </activity>
+        <activity
+            android:name=".UnratedMaharajaChessBoard"
+            android:label="@string/title_activity_unrated_maharaja_chess_board"
+            android:parentActivityName=".UnratedGamePage" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.myfirstapp.UnratedGamePage" />
+        </activity>
+        <activity
+            android:name=".UnratedMaharaja"
+            android:label="@string/title_activity_unrated_maharaja" >
+        </activity>
+    </application>
+
+</manifest>
